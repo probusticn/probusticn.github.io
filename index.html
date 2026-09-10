@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>绅士-礼仪修养、绅士风度与绅士文化指南</title>
+<meta name="description" content="绅士不只是穿着讲究，更是一种由内而外的修养与风度。本站梳理绅士的含义起源、礼仪规范、着装搭配、言行举止、社交场合应对与常见疑问，帮助你理解并践行绅士精神。">
+<meta name="keywords" content="绅士,绅士风度,绅士礼仪,绅士修养,绅士着装,绅士文化,男士礼仪">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c1f26;
+  --ink-soft:#3c4149;
+  --muted:#6b7280;
+  --line:#e3e0d8;
+  --paper:#faf8f3;
+  --card:#ffffff;
+  --accent:#8a6d3b;
+  --accent-deep:#5f4a26;
+  --accent-soft:#f1ead9;
+  --shadow:0 2px 10px rgba(28,31,38,.06);
+  --shadow-lg:0 12px 32px rgba(28,31,38,.10);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Songti SC","STSong","Noto Serif SC",Georgia,"Microsoft YaHei",serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+
+.wrap{width:min(1160px,92%);margin:0 auto;}
+
+/* ============ 页眉 ============ */
+.site-header{
+  background:linear-gradient(180deg,#232733 0%,#1c1f26 100%);
+  color:#f4f1ea;
+  border-bottom:3px solid var(--accent);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;padding:18px 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:14px;}
+.brand-mark{
+  width:46px;height:46px;border:1.5px solid var(--accent);
+  border-radius:50%;display:grid;place-items:center;
+  font-size:20px;letter-spacing:1px;color:var(--accent);
+  font-family:Georgia,serif;flex:0 0 auto;
+}
+.brand-text b{
+  display:block;font-size:21px;letter-spacing:4px;
+  font-weight:600;font-family:"Songti SC",Georgia,serif;
+}
+.brand-text span{
+  display:block;font-size:11px;letter-spacing:2.5px;
+  color:#a49a86;text-transform:uppercase;
+}
+.main-nav ul{display:flex;gap:6px;flex-wrap:wrap;}
+.main-nav a{
+  display:block;padding:8px 14px;font-size:14.5px;
+  letter-spacing:1px;color:#d8d2c6;border-radius:8px;
+  transition:.25s;
+}
+.main-nav a:hover,.main-nav a.active{
+  background:rgba(138,109,59,.28);color:#fff;
+}
+
+/* ============ 首屏 ============ */
+.hero{
+  background:
+    radial-gradient(circle at 78% 18%,rgba(138,109,59,.20),transparent 55%),
+    linear-gradient(160deg,#2b3040 0%,#1c1f26 100%);
+  color:#f4f1ea;padding:72px 0 64px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-90px;bottom:-90px;
+  width:320px;height:320px;border:1px solid rgba(138,109,59,.35);
+  border-radius:50%;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:48px;align-items:center;position:relative;z-index:2;
+}
+.hero h1{
+  font-size:clamp(28px,4vw,44px);line-height:1.35;
+  letter-spacing:3px;font-weight:600;margin-bottom:20px;
+}
+.hero h1 em{
+  font-style:normal;color:#d9c08a;
+  border-bottom:2px solid rgba(217,192,138,.5);padding-bottom:2px;
+}
+.hero p.lead{
+  font-size:16px;color:#cfc9bd;max-width:600px;margin-bottom:26px;
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px;}
+.hero-tags span{
+  font-size:13px;padding:5px 14px;border-radius:999px;
+  border:1px solid rgba(217,192,138,.45);color:#d9c08a;
+  letter-spacing:1px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:8px;
+  font-size:15px;letter-spacing:1.5px;transition:.25s;
+  border:1px solid transparent;
+}
+.btn-primary{background:var(--accent);color:#fff;}
+.btn-primary:hover{background:var(--accent-deep);transform:translateY(-2px);}
+.btn-ghost{border-color:rgba(244,241,234,.4);color:#f4f1ea;}
+.btn-ghost:hover{border-color:#d9c08a;color:#d9c08a;}
+
+.hero-quote{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(217,192,138,.25);
+  border-radius:var(--radius);padding:32px 30px;
+  backdrop-filter:blur(2px);
+}
+.hero-quote .qmark{
+  font-family:Georgia,serif;font-size:52px;line-height:1;
+  color:rgba(217,192,138,.55);margin-bottom:6px;
+}
+.hero-quote p{font-size:15.5px;color:#e6e1d6;margin-bottom:14px;}
+.hero-quote cite{font-style:normal;font-size:13px;color:#a49a86;letter-spacing:1px;}
+
+/* ============ 通用区块 ============ */
+.section{padding:64px 0;}
+.section.alt{background:#f3efe6;}
+.section-head{margin-bottom:38px;max-width:760px;}
+.section-head .eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:3px;
+  color:var(--accent);text-transform:uppercase;margin-bottom:10px;
+}
+.section-head h2{
+  font-size:clamp(22px,2.6vw,30px);letter-spacing:2px;
+  font-weight:600;margin-bottom:12px;position:relative;padding-left:16px;
+}
+.section-head h2::before{
+  content:"";position:absolute;left:0;top:8px;bottom:8px;
+  width:4px;background:var(--accent);border-radius:2px;
+}
+.section-head p{color:var(--muted);font-size:15px;}
+
+/* ============ 内涵卡片 ============ */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:28px 26px;
+  box-shadow:var(--shadow);transition:.3s;
+}
+.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px);}
+.card .num{
+  font-family:Georgia,serif;font-size:15px;color:var(--accent);
+  letter-spacing:2px;margin-bottom:12px;display:block;
+}
+.card h3{font-size:18px;letter-spacing:1.5px;margin-bottom:12px;font-weight:600;}
+.card p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ============ 礼仪清单 ============ */
+.etiquette-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start;}
+.etiquette-note{
+  background:#232733;color:#e6e1d6;border-radius:var(--radius);
+  padding:32px 30px;
+}
+.etiquette-note h3{
+  color:#d9c08a;font-size:18px;letter-spacing:2px;margin-bottom:16px;font-weight:600;
+}
+.etiquette-note p{font-size:14.5px;color:#bdb7ab;margin-bottom:14px;}
+.etiquette-note p:last-child{margin-bottom:0;}
+.rule-list li{
+  display:flex;gap:16px;padding:18px 0;border-bottom:1px dashed var(--line);
+}
+.rule-list li:last-child{border-bottom:none;}
+.rule-list .idx{
+  flex:0 0 34px;height:34px;border-radius:50%;
+  background:var(--accent-soft);color:var(--accent-deep);
+  display:grid;place-items:center;font-size:14px;
+  font-family:Georgia,serif;
+}
+.rule-list h4{font-size:16px;letter-spacing:1px;margin-bottom:6px;font-weight:600;}
+.rule-list p{font-size:14px;color:var(--muted);}
+
+/* ============ 着装 ============ */
+.dress-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.dress-item{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:24px 22px;text-align:left;
+  transition:.3s;
+}
+.dress-item:hover{border-color:var(--accent);}
+.dress-item .icon{
+  font-family:Georgia,serif;font-size:22px;color:var(--accent);
+  margin-bottom:14px;display:block;
+}
+.dress-item h3{font-size:16px;letter-spacing:1px;margin-bottom:10px;font-weight:600;}
+.dress-item p{font-size:13.8px;color:var(--muted);}
+
+/* ============ 场合应对 ============ */
+.scene-list{display:grid;gap:16px;}
+.scene{
+  display:grid;grid-template-columns:180px 1fr;gap:24px;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:24px 26px;align-items:center;
+}
+.scene .scene-name{
+  font-size:16px;letter-spacing:2px;color:var(--accent-deep);
+  font-weight:600;border-right:2px solid var(--accent-soft);padding-right:16px;
+}
+.scene p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ============ 常见误区 ============ */
+.myth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.myth{
+  background:#fff;border-left:4px solid #c9a86a;
+  border-radius:0 var(--radius) var(--radius) 0;
+  padding:24px 26px;box-shadow:var(--shadow);
+}
+.myth .wrong{
+  font-size:13px;color:#a1562f;letter-spacing:1px;margin-bottom:8px;
+}
+.myth .right{
+  font-size:13px;color:#3f6b4a;letter-spacing:1px;margin-bottom:8px;
+}
+.myth h3{font-size:16.5px;margin-bottom:12px;font-weight:600;letter-spacing:1px;}
+.myth p{font-size:14.3px;color:var(--ink-soft);}
+
+/* ============ 侧栏 + 主内容 ============ */
+.split{display:grid;grid-template-columns:1fr 320px;gap:44px;align-items:start;}
+.aside-box{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:26px 24px;margin-bottom:22px;
+  box-shadow:var(--shadow);
+}
+.aside-box h3{
+  font-size:16px;letter-spacing:2px;margin-bottom:16px;font-weight:600;
+  padding-bottom:12px;border-bottom:1px solid var(--line);
+}
+.aside-box ul li{
+  font-size:14px;color:var(--ink-soft);padding:9px 0;
+  border-bottom:1px dashed #eeeae0;
+}
+.aside-box ul li:last-child{border-bottom:none;}
+.aside-box ul li::before{
+  content:"·";color:var(--accent);font-weight:bold;
+  margin-right:8px;font-size:18px;
+}
+.aside-box p{font-size:14px;color:var(--muted);}
+
+/* ============ FAQ ============ */
+.faq-list{display:grid;gap:14px;}
+.faq-item{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;padding:20px 26px;font-size:16px;
+  letter-spacing:1px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";font-family:Georgia,serif;font-size:22px;
+  color:var(--accent);flex:0 0 auto;transition:.25s;
+}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item .faq-body{
+  padding:0 26px 22px;font-size:14.6px;color:var(--ink-soft);
+  border-top:1px dashed var(--line);padding-top:18px;
+}
+
+/* ============ 页脚 ============ */
+.site-footer{
+  background:#1c1f26;color:#9d968a;padding:52px 0 26px;margin-top:0;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;
+  padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-grid h4{
+  color:#e6e1d6;font-size:15px;letter-spacing:2px;
+  margin-bottom:16px;font-weight:600;
+}
+.footer-grid p{font-size:13.6px;line-height:1.9;}
+.footer-grid li{font-size:13.6px;padding:6px 0;}
+.footer-grid a:hover{color:#d9c08a;}
+.footer-bottom{
+  padding-top:22px;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;font-size:13px;color:#6f6a61;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:34px;}
+  .grid-3,.dress-grid{grid-template-columns:repeat(2,1fr);}
+  .etiquette-layout,.split{grid-template-columns:1fr;gap:32px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:14px;}
+  .main-nav ul{gap:2px;}
+  .main-nav a{padding:6px 10px;font-size:13.5px;}
+  .hero{padding:52px 0 46px;}
+  .section{padding:46px 0;}
+  .grid-3,.grid-2,.dress-grid,.myth-grid{grid-template-columns:1fr;}
+  .scene{grid-template-columns:1fr;gap:12px;}
+  .scene .scene-name{border-right:none;border-bottom:2px solid var(--accent-soft);padding:0 0 10px;}
+  .footer-grid{grid-template-columns:1fr;gap:26px;}
+  .footer-bottom{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">G</div>
+      <div class="brand-text">
+        <b>绅士</b>
+        <span>Gentleman &amp; Manners</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#meaning" class="active">绅士内涵</a></li>
+        <li><a href="#etiquette">礼仪规范</a></li>
+        <li><a href="#dress">着装搭配</a></li>
+        <li><a href="#scene">场合应对</a></li>
+        <li><a href="#myth">常见误区</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>绅士，是<em>修养</em>而非表演</h1>
+        <p class="lead">
+          提到绅士，很多人首先想到西装、领结与英式下午茶。但真正让一个人被称为绅士的，
+          从来不是衣柜里的行头，而是他如何对待他人、如何处理分寸、如何在无人注视时依然保持体面。
+          本页从含义、礼仪、着装、场合与误区几个角度，帮你建立一套可落地的理解框架。
+        </p>
+        <div class="hero-tags">
+          <span>言行分寸</span>
+          <span>着装得体</span>
+          <span>尊重他人</span>
+          <span>自我克制</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#meaning" class="btn btn-primary">从内涵读起</a>
+          <a href="#etiquette" class="btn btn-ghost">查看礼仪要点</a>
+        </div>
+      </div>
+      <aside class="hero-quote">
+        <div class="qmark">“</div>
+        <p>
+          绅士是那种让你感到自在的人——他记得你的名字，留意你的不便，
+          并且从不让你因为他的存在而局促。
+        </p>
+        <cite>—— 关于绅士风度的一种通俗概括</cite>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 绅士内涵 -->
+  <section class="section" id="meaning">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Meaning</span>
+        <h2>绅士的三层含义：身份、修养与态度</h2>
+        <p>
+          “绅士”一词在不同语境下指向不同的东西。理解它的层次，才不会把它简化成一套穿衣规则或几句客套话。
+        </p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>历史身份：一个阶层称谓</h3>
+          <p>
+            在早期欧洲社会，“绅士”最初与土地、门第和特定社会阶层相关，
+            带有明显的身份烙印。随着社会结构变化，这一层含义逐渐淡化，
+            人们更关注一个人是否具备与之匹配的教养与担当。
+          </p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>行为修养：可习得的准则</h3>
+          <p>
+            守时、守信、不打断别人、公共场合控制音量、对服务人员保持礼貌——
+            这些具体行为构成了绅士修养的日常形态。它们不依赖出身，而依赖长期的自我要求。
+          </p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>内在态度：以他人为念</h3>
+          <p>
+            绅士精神的核心，是在做决定时把别人的感受纳入考量：
+            说话前想一句这话会不会伤人，行动前想一步会不会给别人添麻烦。
+            外在的得体，只是这种态度的自然结果。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 礼仪规范 -->
+  <section class="section alt" id="etiquette">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Etiquette</span>
+        <h2>日常礼仪：八个不需要天赋的细节</h2>
+        <p>
+          礼仪不是繁文缛节，而是让相处更顺畅的共识。以下这些细节门槛不高，却最能体现一个人的分寸感。
+        </p>
+      </div>
+      <div class="etiquette-layout">
+        <div class="etiquette-note">
+          <h3>先记住一个原则</h3>
+          <p>
+            所有礼仪都服务于同一个目的：让对方感到被尊重、被照顾，而不是被冒犯或被为难。
+          </p>
+          <p>
+            当你不确定某个举动是否得体时，可以问自己一句——
+            “如果换成我被这样对待，会觉得舒服吗？”这个朴素的判断，
+            往往比背诵任何礼仪手册都管用。
+          </p>
+          <p>
+            礼仪也不是单向的表演。它的前提是真诚，一旦变成炫耀或施压，
+            就与绅士精神背道而驰。
+          </p>
+        </div>
+        <ul class="rule-list">
+          <li>
+            <span class="idx">1</span>
+            <div>
+              <h4>守时，并尊重他人的时间</h4>
+              <p>约定时间前留出余量，若确实会迟到，尽早告知并说明大致到达时间，而不是让对方干等。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">2</span>
+            <div>
+              <h4>倾听时不打断</h4>
+              <p>让对方把话说完，再表达自己的看法。急于反驳或抢话，是最容易被察觉的失礼。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">3</span>
+            <div>
+              <h4>对服务人员保持平等礼貌</h4>
+              <p>说“请”“谢谢”，不用命令式语气。一个人如何对待服务者，往往比如何对待上级更能说明问题。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">4</span>
+            <div>
+              <h4>公共场合控制音量与动作</h4>
+              <p>车厢、餐厅、电梯里降低说话音量，不长时间占用通道，这些都是对陌生人的基本体谅。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">5</span>
+            <div>
+              <h4>进出与同行时的次序</h4>
+              <p>为同行者扶门、让行，注意对方是否需要帮助。重点是照顾，而不是机械地执行某条固定顺序。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">6</span>
+            <div>
+              <h4>交谈避开令人不适的话题</h4>
+              <p>初次见面少谈收入、年龄、婚育、外貌评价等敏感内容，把话题留给对方愿意展开的部分。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">7</span>
+            <div>
+              <h4>守信，也守口</h4>
+              <p>答应的事尽量做到；别人私下说的话，不随意转述。可靠与克制，是长期积累的信任基础。</p>
+            </div>
+          </li>
+          <li>
+            <span class="idx">8</span>
+            <div>
+              <h4>得体地接受与拒绝</h4>
+              <p>接受帮助时真诚道谢，拒绝时说明原因并表达感谢，不让对方难堪。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 着装搭配 -->
+  <section class="section" id="dress">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Dress</span>
+        <h2>着装：得体优先于昂贵</h2>
+        <p>
+          绅士着装的关键词是“合场合”与“合身”，而不是品牌和价格。
+          同一套衣服，穿对场合、尺寸合适，就已经赢过大多数用力过猛的搭配。
+        </p>
+      </div>
+      <div class="dress-grid">
+        <article class="dress-item">
+          <span class="icon">Ⅰ</span>
+          <h3>合身是第一位</h3>
+          <p>肩线贴合、袖长到手腕、裤长不堆积。宁可选择普通面料但版型合适，也不要追求昂贵却松垮或紧绷的衣服。</p>
+        </article>
+        <article class="dress-item">
+          <span class="icon">Ⅱ</span>
+          <h3>先看场合再选衣</h3>
+          <p>正式场合以深色套装、素色衬衫为主；日常通勤可休闲西装或整洁针织；休闲聚会不必过度正式，避免与环境格格不入。</p>
+        </article>
+        <article class="dress-item">
+          <span class="icon">Ⅲ</span>
+          <h3>色彩不超过三种</h3>
+          <p>全身主色控制在两到三种以内，鞋、腰带、包等配件颜色尽量呼应，整体观感会立刻干净许多。</p>
+        </article>
+        <article class="dress-item">
+          <span class="icon">Ⅳ</span>
+          <h3>整洁胜过繁复</h3>
+          <p>衣物无褶皱、无污渍、无异味，鞋面干净，指甲修剪整齐。这些基础项做到位，比任何装饰都更有说服力。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 场合应对 -->
+  <section class="section alt" id="scene">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Scenes</span>
+        <h2>不同场合的分寸把握</h2>
+        <p>
+          礼仪没有万能公式，同一句话在办公室和饭桌上效果可能完全不同。
+          以下按常见场景梳理要点，供参考而非照搬。
+        </p>
+      </div>
+      <div class="scene-list">
+        <div class="scene">
+          <div class="scene-name">商务会面</div>
+          <p>提前了解对方身份与议题，准备简明要点；握手时力度适中、目光平视；交谈中少用夸张承诺，多用具体事实回应。结束时明确下一步安排。</p>
+        </div>
+        <div class="scene">
+          <div class="scene-name">正式宴请</div>
+          <p>等主人示意再动筷，餐具由外向内使用；敬酒量力而行，不强行劝酒；席间少谈争议话题，多照顾左右两侧客人的参与感。</p>
+        </div>
+        <div class="scene">
+          <div class="scene-name">日常社交</div>
+          <p>记住对方名字并在对话中使用；聊天时手机静音、不频繁查看；告别时向主要交谈对象致意，而不是悄悄离场。</p>
+        </div>
+        <div class="scene">
+          <div class="scene-name">公共交通与公共空间</div>
+          <p>排队守序，主动为需要的人让座；外放声音戴耳机；雨天收好雨具，避免弄湿他人。细微之处最见习惯。</p>
+        </div>
+        <div class="scene">
+          <div class="scene-name">线上沟通</div>
+          <p>消息尽量一次说清，避免连续刷屏；非紧急事务避开深夜；转发他人内容前先确认是否合适。线上同样需要分寸。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 误区 + 侧栏 -->
+  <section class="section" id="myth">
+    <div class="wrap split">
+      <div>
+        <div class="section-head">
+          <span class="eyebrow">Myths</span>
+          <h2>关于绅士的四个常见误解</h2>
+          <p>把这些误解理清，比记住多少条礼仪条目都重要。</p>
+        </div>
+        <div class="myth-grid">
+          <article class="myth">
+            <div class="wrong">误解一</div>
+            <h3>绅士等于穿西装</h3>
+            <div class="right">更准确的理解</div>
+            <p>着装是外在表达，不是资格证明。穿着随意但处处替人着想的人，远比一身名牌却对服务员呼来喝去的人更接近绅士。</p>
+          </article>
+          <article class="myth">
+            <div class="wrong">误解二</div>
+            <h3>绅士就是沉默寡言</h3>
+            <div class="right">更准确的理解</div>
+            <p>克制不等于不说话。该表达立场时清晰表达，只是不靠音量压人、不靠贬低他人抬高自己。</p>
+          </article>
+          <article class="myth">
+            <div class="wrong">误解三</div>
+            <h3>绅士风度是男性专属</h3>
+            <div class="right">更准确的理解</div>
+            <p>礼貌、守信、体谅他人是通用品质。“绅士”只是其中一种历史称谓，其内核并不限定性别。</p>
+          </article>
+          <article class="myth">
+            <div class="wrong">误解四</div>
+            <h3>礼仪是给别人看的表演</h3>
+            <div class="right">更准确的理解</div>
+            <p>一旦变成表演，就会挑对象、看场合，对有用的人客气、对无用的人冷淡。真正的修养在无人注意时依然成立。</p>
+          </article>
+        </div>
+      </div>
+
+      <aside>
+        <div class="aside-box">
+          <h3>快速自查清单</h3>
+          <ul>
+            <li>今天是否准时赴约或提前说明</li>
+            <li>是否完整听完别人一段话</li>
+            <li>是否对服务人员说了谢谢</li>
+            <li>公共场合是否控制过音量</li>
+            <li>是否答应了却没做到的事</li>
+            <li>是否转述过别人的私事</li>
+          </ul>
+        </div>
+        <div class="aside-box">
+          <h3>练习建议</h3>
+          <p>
+            不必一次改掉所有习惯。每周挑一到两条刻意练习，
+            坚持一段时间后再增加。修养是长期积累的结果，
+            而不是短期突击能完成的项目。
+          </p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section alt" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>关于绅士的常见问题</h2>
+        <p>以下问题来自日常讨论中最常被提及的疑问，回答力求稳妥、可操作。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>绅士风度可以后天培养吗？</summary>
+          <div class="faq-body">
+            可以。绅士风度主要由具体行为习惯构成，而习惯是可以通过有意识的练习改变的。
+            比较有效的方式是从一两个高频场景入手，比如守时和倾听，
+            坚持一段时间形成惯性后再扩展到其他方面。关键在于持续，而非一次性用力。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>没有条件穿正装，还能算绅士吗？</summary>
+          <div class="faq-body">
+            完全可以。着装只是表达方式之一，且受经济条件、职业环境和文化背景影响很大。
+            整洁、合身、符合场合的日常穿着同样得体。判断一个人是否绅士，
+            更应看他如何对待他人，而不是他穿了什么牌子。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>绅士礼仪和中国的传统礼节冲突吗？</summary>
+          <div class="faq-body">
+            两者在核心上高度一致，都强调尊重、谦让与分寸。
+            差异主要体现在具体形式上，比如问候方式、座次安排、敬酒习惯等。
+            在跨文化场合中，可以以尊重对方习惯为前提，同时保留自身文化中得体的部分，
+            不必生硬地二选一。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>面对不礼貌的人，还要保持绅士风度吗？</summary>
+          <div class="faq-body">
+            保持风度不等于无条件忍让。可以礼貌而明确地表达界限，
+            比如指出对方行为带来的困扰，或选择结束对话。
+            绅士精神中包含自我尊重，一味退让并不符合它的本意。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>线上交流也需要讲究绅士风度吗？</summary>
+          <div class="faq-body">
+            需要。文字缺少语气和表情，更容易被误读，因此更需要克制与清晰。
+            避免情绪化回复、不随意公开他人信息、转发前先核实，
+            这些都是线下礼仪在线上环境的自然延伸。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本站</h4>
+        <p>
+          本站围绕“绅士”这一主题，整理其含义、礼仪规范、着装建议与场合应对方式，
+          希望为关注个人修养与社交分寸的读者提供一份清晰、可参考的内容索引。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#meaning">绅士内涵</a></li>
+          <li><a href="#etiquette">礼仪规范</a></li>
+          <li><a href="#dress">着装搭配</a></li>
+          <li><a href="#scene">场合应对</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸阅读</h4>
+        <ul>
+          <li><a href="#myth">常见误区辨析</a></li>
+          <li><a href="#faq">常见问题解答</a></li>
+          <li><a href="#etiquette">日常自查清单</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>绅士 · 礼仪修养与风度参考</span>
+      <span>内容以通用社交常识为基础整理，具体场合请结合实际情况判断</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 导航高亮：滚动到对应区块时更新当前项
+  (function () {
+    var links = document.querySelectorAll('.main-nav a[href^="#"]');
+    var sections = [];
+    links.forEach(function (link) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) sections.push({ link: link, el: el });
+    });
+
+    function update() {
+      var pos = window.scrollY + 140;
+      var current = sections[0];
+      sections.forEach(function (item) {
+        if (item.el.offsetTop <= pos) current = item;
+      });
+      links.forEach(function (l) { l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          update();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+    update();
+  })();
+</script>
+
+</body>
+              </html>
